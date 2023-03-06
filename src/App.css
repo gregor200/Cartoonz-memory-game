@@ -1,0 +1,111 @@
+.content {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+
+header {
+  background: #4E6E81;
+  height: 12vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes enlargen {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+
+.stars {
+  height: 100%;
+  width: 13vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 2vw;
+  gap: 0.5vw;
+}
+
+
+.stars img {
+  height: 7vh;
+  width: 7vh;
+  animation: enlargen 3s linear 0s infinite;
+}
+
+h1 {
+  font-family: 'Rubik Iso', cursive;
+  font-size: 2rem;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 1vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.scores {
+  height: 100%;
+  width: 10vw;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  right: 2vw;
+}
+
+.game {
+  min-height: 90vh;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5vw;
+  padding: 3vh;
+}
+
+.card {
+  height: 40vh;
+  width: 18vw;
+  background: orange;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.8vh;
+  font-family: 'Bebas Neue', cursive;
+  gap: 1vh;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 2px 2px olive;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  pointer-events: none;
+}
+
+.card img {
+  pointer-events: none;
+  height: 80%;
+  width: 100%;
+}
